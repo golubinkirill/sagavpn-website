@@ -1,0 +1,660 @@
+/* Основные стили */
+.main-container {
+    background-color: #252424;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    padding: 0px;
+    padding-right: 0;
+  }
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+  
+  /* Хеадер */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .logo {
+    font-size: 38px;
+    font-weight: 800; 
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+    font-size: 26px;
+  }
+  
+  /* Контент */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .text-content {
+    max-width: 50%;
+    margin-left: 35px;
+  }
+  
+  .title {
+    font-size: 88px;
+    font-weight: 800; 
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 30px;
+    font-weight: 800; 
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .features {
+    list-style-type: none;
+    margin-left: 30px;
+  }
+  
+  .features li {
+    font-size: 30px;
+    font-weight: 200; 
+    margin-bottom: 10px;
+    line-height: 2;
+  }
+  
+  .image-content img {
+    max-width:110%;
+    height: 110%;
+  }
+  /* Основные стили для блока тарифов */
+.pricing-section {
+    margin-top: 50px;
+    text-align: center;
+    height: 75%; /* 3/4 экрана */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .pricing-title {
+    font-size: 48px;
+    font-weight: 800; /* Extra Bold */
+    padding: 0;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    height: 64%;
+    background: linear-gradient(180deg, #E6E6E6 2%, #616161 65%, #1F1F1F 96%);
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+  
+  .pricing-card {
+    background-color: #fff;
+    color: #000000;
+    display: flex;
+    border-radius: 30px;
+    border: 3px solid #000000;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 295px;
+    height: 295px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  .price {
+    font-size: 68px;
+    font-weight: 800; /* Extra Bold */
+    margin: 20px 0;
+    margin-left: 40px;
+  }
+  
+  .price span {
+    font-size: 20px;
+    font-weight: 500;
+    vertical-align: top;
+  }
+
+  .card-content h3{
+    font-size: 35px;
+  }
+  
+  .buy-button {
+    background-color: #0C850C;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 230px;
+    height: 55px;
+    padding: 10px 20px;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .buy-button:hover {
+    background-color: #0a6a0a;
+  }
+  
+  .discount-tag {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  
+  .discount-tag.yellow {
+    background-color: #f5c400;
+  }
+  
+  .discount-tag.orange {
+    background-color: #ff6200;
+  }
+
+  .pricing-header {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    color: black !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .why-section{
+    width: 100%;
+    height: 100vh;
+
+    background: url('../images/firstpage/background.png') no-repeat center;
+    background-size: cover;
+
+  }
+
+  .why-section {
+    background: url('../images/firstpage/background.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.why-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20px;
+
+}
+
+.why-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%; 
+  margin-bottom: 40px;
+  transition: all 0.3s ease; /* Плавный переход */
+}
+
+.why-item img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease; /* Плавный переход */
+}
+
+.why-item h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.3s ease; /* Плавный переход */
+}
+
+.why-item p {
+  font-size: 19px;
+  font-weight: 400;
+  width: 65%;
+  color: white;
+  transition: color 0.3s ease; /* Плавный переход */
+}
+
+/* Стиль при наведении на одну фичу */
+.why-item:hover {
+  transform: scale(1.1); /* Увеличиваем элемент */
+}
+
+.why-item:hover img {
+  filter: brightness(1.2); /* Увеличиваем яркость изображения */
+}
+
+/* Затемняем остальные фичи только при наведении на одну из фич */
+.why-container:hover .why-item:not(:hover) {
+  filter: grayscale(100%); /* Применяем серый цвет */
+  opacity: 0.5; /* Уменьшаем прозрачность */
+}
+
+/* Применение серого цвета к тексту */
+.why-container:hover .why-item:not(:hover) h3,
+.why-container:hover .why-item:not(:hover) p {
+  color: #A9A9A9; /* Серый цвет текста */
+}
+
+/* Основные стили */
+.main-container {
+  background-color: #252424;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  padding: 0px;
+  padding-right: 0;
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Хеадер */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo {
+  font-size: 38px;
+  font-weight: 800; 
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  font-size: 26px;
+}
+
+/* Контент */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.text-content {
+  max-width: 50%;
+  margin-left: 35px;
+}
+
+.title {
+  font-size: 88px;
+  font-weight: 800; 
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 800; 
+  margin-bottom: 40px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.features {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.features li {
+  font-size: 25px;
+  font-weight: 200; 
+  margin-bottom: 10px;
+  line-height: 2;
+}
+
+.image-content img {
+  max-width:110%;
+  height: 110%;
+}
+/* Основные стили для блока тарифов */
+.pricing-section {
+  margin-top: 50px;
+  text-align: center;
+  height: 75%; /* 3/4 экрана */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-title {
+  font-size: 48px;
+  font-weight: 800; /* Extra Bold */
+  padding: 0;
+}
+
+.pricing-cards {
+  display: flex;
+  height: 64%;
+  background: linear-gradient(180deg, #E6E6E6 2%, #616161 65%, #1F1F1F 96%);
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+}
+
+.pricing-card {
+  background-color: #fff;
+  color: #000000;
+  display: flex;
+  border-radius: 30px;
+  border: 3px solid #000000;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 295px;
+  height: 295px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.price {
+  font-size: 68px;
+  font-weight: 800; /* Extra Bold */
+  margin: 20px 0;
+  margin-left: 40px;
+}
+
+.price span {
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+.card-content h3{
+  font-size: 35px;
+}
+
+.buy-button {
+  background-color: #0C850C;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 230px;
+  height: 55px;
+  padding: 10px 20px;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: #0a6a0a;
+}
+
+.discount-tag {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.discount-tag.yellow {
+  background-color: #f5c400;
+}
+
+.discount-tag.orange {
+  background-color: #ff6200;
+}
+
+.pricing-header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  color: black !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.why-section{
+  width: 100%;
+  height: 100vh;
+
+  background: url('../images/firstpage/background.png') no-repeat center;
+  background-size: cover;
+
+}
+
+.why-section {
+  background: url('../images/firstpage/background.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px;
+
+}
+
+.why-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 33%; /* Ширина каждого блока */
+  margin-bottom: 40px;
+}
+
+.why-item img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+
+.why-item h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.why-item p {
+  font-size: 19px;
+  font-weight: 400;
+  width: 65%;
+  color: white;
+}
+
+/* Секция загрузки */
+.download-section {
+  text-align: center;
+  height: 90vh; 
+  display: flex;
+  width: 100%;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-title {
+  font-size: 40px; 
+  display: flex;
+  font-weight: 800;
+  margin-bottom: 100px;
+  width: 100%;
+  background-color: white;
+  padding: 0;
+  padding-top: 40px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.platforms {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Платформы */
+.platform-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  transition: transform 0.3s ease; /* Плавный переход при изменении масштаба */
+}
+
+.platform-item img {
+  width: 110px; 
+  height: 110px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Плавный переход для изображения */
+}
+
+/* Эффект при наведении на платформу */
+.platform-item:hover {
+  transform: scale(1.1); /* Увеличение всей платформы */
+}
+
+.platform-item:hover img {
+  transform: scale(1.2); /* Увеличение изображения платформы */
+}
+
+.platform-item p {
+  font-size: 26px;
+  font-weight: 800;
+  color: #393939;
+}
+
+.store-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; 
+  padding-top: 85px;
+}
+
+.store-buttons a {
+  margin: 0 10px;
+}
+
+.store-buttons img {
+  width: 230px; 
+  height: auto;
+}
+
+
+/* Основные стили для мобильной версии */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Перестраиваем контент по вертикали */
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .text-content {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .title {
+    font-size: 48px; /* Уменьшаем размер заголовка */
+  }
+
+  .subtitle {
+    font-size: 20px; /* Уменьшаем размер подзаголовка */
+  }
+
+  .features li {
+    font-size: 18px; /* Уменьшаем размер текста списка */
+    line-height: 1.5;
+  }
+
+  .image-content {
+    margin-top: 20px;
+  }
+
+  .image-content img {
+    max-width: 80%;
+    height: auto; /* Настраиваем изображение под ширину экрана */
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .nav-links a {
+    font-size: 18px; /* Уменьшаем ссылки */
+  }
+}
+
+/* Стили для десктопной версии остаются прежними */
