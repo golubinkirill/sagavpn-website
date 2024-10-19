@@ -36,6 +36,10 @@ html {
     font-size: 24px;
     font-weight: 700;
   }
+
+  .nav-links{
+    flex-direction: row;
+  }
   
   .nav-links a:hover {
     text-decoration: underline;
@@ -569,15 +573,13 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 20px;
-  transition: transform 0.3s ease; /* Плавный переход при изменении масштаба */
+  margin: 0 20px; /* Плавный переход при изменении масштаба */
 }
 
 .platform-item img {
   width: 110px; 
   height: 110px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease; /* Плавный переход для изображения */
+  margin-bottom: 10px; /* Плавный переход для изображения */
 }
 
 /* Эффект при наведении на платформу */
@@ -658,3 +660,12 @@ html {
 }
 
 /* Стили для десктопной версии остаются прежними */
+
+.platform-item {
+  opacity: 1 !important; /* Убедитесь, что это значение установлено в 1 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.platform-item:hover {
+  opacity: 0.8 !important; /* Для эффекта при наведении */
+}
